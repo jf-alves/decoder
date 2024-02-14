@@ -1,0 +1,6 @@
+
+w	java:S116"VRename this field "REQUEST_URI" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ñ «ýÿÿÿÿ8½ƒ÷ÉÚ1
+b
+java:S1854*"@Remove this useless assignment to local variable "searchResult".(¾†ÌÑùÿÿÿÿ8Âƒ÷ÉÚ1
+N
+java:S1481"1Remove this unused "searchResult" local variable.(§¼»•8Ãƒ÷ÉÚ1

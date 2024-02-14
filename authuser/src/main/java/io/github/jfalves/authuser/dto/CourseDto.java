@@ -2,6 +2,8 @@ package io.github.jfalves.authuser.dto;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import io.github.jfalves.authuser.enums.CourseLevel;
+import io.github.jfalves.authuser.enums.CourseStatus;
 import lombok.*;
 
 import java.util.UUID;
@@ -20,6 +22,6 @@ public class CourseDto {
     private String imageUrl;
     private CourseStatus courseStatus;
     private UUID userInstructor;
-    private CourseLeve courseLeve;
+    private CourseLevel courseLeve;
 
 }
