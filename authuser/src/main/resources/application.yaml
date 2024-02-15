@@ -28,3 +28,8 @@ logging:
     org.springframework.web: debug
 #    Faz o debug no pacote hibernate, pode ser utilizado em outros pacotes
     org.hibernate: info
+
+
+api:
+  url:
+    course: 'http://localhost:8082'

@@ -5,6 +5,7 @@ import io.github.jfalves.course.dto.UserDto;
 import io.github.jfalves.course.service.UtilsService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -20,12 +21,13 @@ import java.util.UUID;
 @Log4j2
 @Component
 @RequiredArgsConstructor
-public class CourseClient {
+public class AuthUserClient {
 
     private final RestTemplate template;
     private final UtilsService service;
 
-    String REQUEST_URI = "http://localhost:8087";
+    @Value("${api.url.authuser}")
+    String REQUEST_URL_AUTHUSER;
 
     public Page<UserDto> getAllUsersByCourse(UUID courseId, Pageable pageable){
         List<UserDto> searchResult = null;
@@ -45,5 +47,10 @@ public class CourseClient {
         }
         log.info("Ending request /users courseId {} ", courseId);
         return result.getBody();
+    }
+
+    public ResponseEntity<UserDto>getOneUseById(UUID userId){
+        String url = REQUEST_URL_AUTHUSER + "/user/" + userId;
+        return template.exchange(url, HttpMethod.GET, null, UserDto.class);
     }
 }

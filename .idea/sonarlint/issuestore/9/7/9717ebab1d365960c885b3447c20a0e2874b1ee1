@@ -1,4 +1,4 @@
 
-p	java:S116"VRename this field "REQUEST_URI" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ñ «ıÿÿÿÿ
+{	java:S116"_Rename this field "REQUEST_URL_AUTHUSER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑšË8ûâ®íÚ1
 c
-java:S5361"HReplace this call to "replaceAll()" by a call to the "replace()" method.(«„³ÿÿÿÿÿ
+java:S5361"HReplace this call to "replaceAll()" by a call to the "replace()" method.(«„³ÿÿÿÿÿ

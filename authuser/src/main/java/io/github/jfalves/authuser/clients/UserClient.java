@@ -5,6 +5,7 @@ import io.github.jfalves.authuser.dto.ResponsePageDto;
 import io.github.jfalves.authuser.service.UtilsService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -25,7 +26,8 @@ public class UserClient {
     private final RestTemplate template;
     private final UtilsService service;
 
-    String REQUEST_URI = "http://localhost:8082";
+    @Value("${api.url.course}")
+    String REQUEST_URL_COURSE;
 
     public Page<CourseDto> getAllCoursesByUser(UUID userId, Pageable pageable) {
         List<CourseDto> searchResult = null;

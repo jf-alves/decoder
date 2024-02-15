@@ -1,4 +1,4 @@
 
-w	java:S116"VRename this field "REQUEST_URI" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘њРЯюяяяя8ЩњьТШ1
+y	java:S116"]Rename this field "REQUEST_URL_COURSE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( вЂЮ8цњµнЪ1
 j
-java:S5361"HReplace this call to "replaceAll()" by a call to the "replace()" method.(«„Ѓіяяяяя8тБлТШ1
+java:S5361"HReplace this call to "replaceAll()" by a call to the "replace()" method.(«„Ѓіяяяяя8тБлТШ1
